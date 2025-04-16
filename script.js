@@ -62,3 +62,14 @@ downloadZipBtn.addEventListener("click", async () => {
   a.download = "converted_images.zip";
   a.click();
 });
+
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a55a006fa69ccbe4afe6ea34943e58fe',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/a55a006fa69ccbe4afe6ea34943e58fe/invoke.js"></script>
