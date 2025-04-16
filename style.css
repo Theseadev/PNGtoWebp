@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  text-align: center;
+}
+
+header {
+  padding: 2rem 1rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  color: #6b7280;
+  margin: 0.5rem 0 2rem;
+}
+
+.upload-area {
+  border: 2px dashed #c7c7f3;
+  background-color: #f3f4f6;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  border-radius: 12px;
+}
+
+.upload-area input {
+  display: none;
+}
+
+.upload-label {
+  display: inline-block;
+  background-color: #6366f1;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.upload-label:hover {
+  background-color: #4f46e5;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.25rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 260px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card img {
+  max-height: 180px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6366f1;
+  font-size: 0.9rem;
+}
+
+.download-zip {
+  margin: 2rem auto;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #10b981;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.download-zip:hover {
+  background-color: #059669;
+}
