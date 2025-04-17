@@ -6,15 +6,15 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    /* Menyembunyikan iklan atau menata posisinya */
+    /* Menyembunyikan atau menata iklan agar tidak mengganggu tampilan */
     #at_options {
-      display: none;
+      display: none; /* Menyembunyikan elemen iklan */
     }
 
-    /* Atur posisi iklan yang tetap muncul jika diperlukan */
-    .ad-container {
-      position: fixed;
-      bottom: 10px;
+    /* Menata posisi iklan di bawah tanpa mengubah layout utama */
+    iframe[src*="profitableratecpm.com"] {
+      position: absolute;
+      bottom: 0;
       left: 50%;
       transform: translateX(-50%);
       z-index: 9999;
@@ -22,6 +22,7 @@
       height: 50px;
     }
 
+    /* Atur tampilan umum agar tetap rapi */
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -103,14 +104,6 @@
       'height' : 50,
       'width' : 320,
       'params' : {}
-    };
-
-    // Menambahkan kelas CSS untuk menata iklan
-    window.onload = function() {
-      var iframe = document.querySelector('iframe');
-      if (iframe) {
-        iframe.classList.add('ad-container');
-      }
     };
   </script>
   <script type="text/javascript" src="//www.highperformanceformat.com/f28c02da9758854deebcb0973e75a6d7/invoke.js"></script>
