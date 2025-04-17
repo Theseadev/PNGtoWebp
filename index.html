@@ -5,9 +5,80 @@
   <title>PNG to WebP Converter</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Menyembunyikan iklan atau menata posisinya */
+    #at_options {
+      display: none;
+    }
+
+    /* Atur posisi iklan yang tetap muncul jika diperlukan */
+    .ad-container {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      width: 320px;
+      height: 50px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #3a7bd5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .upload-area {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .upload-label {
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: #3a7bd5;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    .download-zip {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #3a7bd5;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .download-zip:hover {
+      background-color: #276ca4;
+    }
+  </style>
 </head>
 <body>
-	<script type='text/javascript' src='//pl26394389.profitableratecpm.com/5d/ca/e2/5dcae2964e69c034d0fdf52a02d74bdb.js'></script>
+  <script type='text/javascript' src='//pl26394389.profitableratecpm.com/5d/ca/e2/5dcae2964e69c034d0fdf52a02d74bdb.js'></script>
 
   <header>
     <h1>PNG to WebP Converter</h1>
@@ -26,14 +97,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <script src="script.js"></script>
   <script type="text/javascript">
-	atOptions = {
-		'key' : 'a55a006fa69ccbe4afe6ea34943e58fe',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/f28c02da9758854deebcb0973e75a6d7/invoke.js"></script>
+    atOptions = {
+      'key' : 'a55a006fa69ccbe4afe6ea34943e58fe',
+      'format' : 'iframe',
+      'height' : 50,
+      'width' : 320,
+      'params' : {}
+    };
+
+    // Menambahkan kelas CSS untuk menata iklan
+    window.onload = function() {
+      var iframe = document.querySelector('iframe');
+      if (iframe) {
+        iframe.classList.add('ad-container');
+      }
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/f28c02da9758854deebcb0973e75a6d7/invoke.js"></script>
 </body>
 </html>
