@@ -63,7 +63,6 @@ downloadZipBtn.addEventListener("click", async () => {
   a.click();
 });
 
-<script>
   const fakeButton = document.getElementById('fakeButton');
   const realUpload = document.getElementById('realUpload');
 
