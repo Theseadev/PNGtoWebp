@@ -63,23 +63,4 @@ downloadZipBtn.addEventListener("click", async () => {
   a.click();
 });
 
-  const fakeButton = document.getElementById('fakeButton');
-  const realUpload = document.getElementById('realUpload');
-
-  // Saat halaman dimuat, cek apakah user sudah pernah klik tombol palsu
-  if (localStorage.getItem('redirectedOnce')) {
-    fakeButton.style.display = 'none';
-    realUpload.style.display = 'block';
-  }
-
-  // Saat tombol palsu diklik
-  fakeButton.addEventListener('click', function () {
-    // Simpan status bahwa user sudah pernah klik
-    localStorage.setItem('redirectedOnce', 'true');
-
-    // Arahkan ke halaman tujuan (bisa link monetisasi/iklan)
-    window.location.href = 'https://example.com'; // Ganti dengan link kamu
-  });
-</script>
-
 
