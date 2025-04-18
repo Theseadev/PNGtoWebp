@@ -62,5 +62,3 @@ downloadZipBtn.addEventListener("click", async () => {
   a.download = "converted_images.zip";
   a.click();
 });
-
-
