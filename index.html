@@ -14,10 +14,15 @@
     <p>Convert PNG to WebP online, up to 20 images.</p>
   </header>
 
-  <div class="upload-area">
-    <label for="fileInput" class="upload-label">Choose Files</label>
-    <input type="file" id="fileInput" multiple accept="image/png">
-  </div>
+  <!-- Tombol Palsu -->
+<div id="fakeButton" class="fake-upload-label">Choose Files</div>
+
+<!-- Tombol Upload Asli (disembunyikan dulu) -->
+<div class="upload-area" id="realUpload" style="display: none;">
+  <label for="fileInput" class="upload-label">Choose Files</label>
+  <input type="file" id="fileInput" multiple accept="image/png">
+</div>
+
 
   <div class="gallery" id="gallery"></div>
 
