@@ -108,19 +108,3 @@ p {
 .download-zip:hover {
   background-color: #059669;
 }
-
-.fake-upload-label {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #4CAF50;
-  color: white;
-  font-weight: 600;
-  font-family: 'Inter', sans-serif;
-  border-radius: 6px;
-  cursor: pointer;
-  text-align: center;
-  user-select: none;
-}
-.fake-upload-label:hover {
-  background-color: #45a049;
-}
